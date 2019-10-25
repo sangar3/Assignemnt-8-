@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+		 * (Santiago Garcia II)
+		 * (SpawnManager.cs)
+		 * (Assignment 8)
+		 * (Spawns objects when player goes up the ramp )
+	*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
