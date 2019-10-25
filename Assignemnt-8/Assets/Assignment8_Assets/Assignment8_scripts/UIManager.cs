@@ -23,11 +23,11 @@ public class UIManager : MonoBehaviour
         void Awake()
         {
          
-            instance = this;
+            instance = worldspacetext.SetActive(false);
         }
 
-     
-        public void DisplayPrompt()
+       
+        void DisplayPrompt()
         {
             worldspacetext.SetActive(true);
            
