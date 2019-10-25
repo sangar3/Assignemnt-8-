@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class SpawnManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject target;
+
     void Start()
     {
-        
+        InvokeRepeating("SpawnObject", 2, 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpawnOject()
     {
-        
+        float x = Random.Range(-2.0f, 2.0f);
+        float z = Random.Range(-2.0f, 2.0f);
+        Instantiate(target, new Vector3(x, 2, z), Quaternion.identity);
     }
 }

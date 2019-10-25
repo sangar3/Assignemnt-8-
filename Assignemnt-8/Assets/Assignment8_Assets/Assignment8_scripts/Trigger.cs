@@ -7,9 +7,7 @@ public class Trigger : MonoBehaviour
     public UIManager UI;
 
 
-    public  OnTriggerEnter()
-    {
-      return UI.instance.DisplayPrompt();
-    }
+    //public  OnTriggerEnter()
+  }
 
-}
+

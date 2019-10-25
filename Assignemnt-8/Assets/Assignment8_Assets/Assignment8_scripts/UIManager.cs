@@ -14,32 +14,5 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     
-    public class SimpleSingleton : MonoBehaviour
-    {
-        public GameObject worldspacetext;
-
-        public static SimpleSingleton instance;
-
-        void Awake()
-        {
-         
-            instance = worldspacetext.SetActive(false);
-        }
-
-       
-        void DisplayPrompt()
-        {
-            worldspacetext.SetActive(true);
-           
-        }
-
-        
-        void UsageExample()
-        {
-           
-            SimpleSingleton.instance.DisplayPrompt();
-           
-        }
-        
-    }
+    
 }
